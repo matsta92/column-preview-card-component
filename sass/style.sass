@@ -1,0 +1,152 @@
+@import 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh
+    background-color: $very-light-gray
+    font-family: 'Lexend Deca', sans-serif
+    font-size: 15px
+    color: $transparent-white
+
+.preview-component
+    display: flex
+    width: 1000px
+
+.preview-component-card
+    padding: 50px 63px 50px 63px
+
+.preview-component-sedans
+    border-radius: 10px 0px 0px 10px
+    background-color: $bright-orange
+
+.preview-component-suvs
+    background-color: $dark-cyan
+
+.preview-component-luxury
+    border-radius: 0px 10px 10px 0px
+    background-color: $very-dark-cyan
+
+.preview-component-card-title
+    margin: 30px 0 30px 0
+    font-size: 40px
+    font-family: 'Big Shoulders Display', sans-serif
+    text-transform: uppercase
+    color: $very-light-gray
+
+.preview-component-card-description
+    line-height: 25px
+
+.preview-component-card-btn
+    margin-top: 80px
+    border: 2px solid hsla(0%, 0%, 0%, 0)
+    background-color: $very-light-gray
+    width: 150px
+    height: 45px
+    border-radius: 23px
+    font-weight: 700
+    cursor: pointer
+    transition: .3s background-color, .3s color, .3s border
+
+.preview-component-sedans .preview-component-card-btn
+    color: $bright-orange
+
+.preview-component-suvs .preview-component-card-btn
+    color: $dark-cyan
+
+.preview-component-luxury .preview-component-card-btn
+    color: $very-dark-cyan
+
+.preview-component-sedans .preview-component-card-btn:hover,.preview-component-suvs .preview-component-card-btn:hover, .preview-component-luxury .preview-component-card-btn:hover
+    background-color: hsla(0%, 0%, 0%, 0)
+    color: $very-light-gray
+    border: 2px solid $very-light-gray
+
+footer
+    position: absolute
+    bottom: 10px
+    font-size: 11px
+    text-align: center
+    color: $very-dark-cyan
+    
+footer a 
+    color: hsl(228, 45%, 44%)
+    
+@media (max-width: 1024px)
+    body
+        font-size: 14px
+
+    .preview-component
+        width: 900px
+    
+    .preview-component-card
+        padding: 50px 43px 50px 43px
+
+@media (max-width: 992px)
+    body
+        font-size: 13px
+
+    .preview-component
+        width: 750px
+    
+    .preview-component-card
+        padding: 40px 35px 40px 35px
+
+    .preview-component-card-title
+        font-size: 35px
+
+    .preview-component-card-description
+        line-height: 25px
+
+    .preview-component-card-btn
+        width: 130px
+        height: 40px
+        font-size: 13px
+    
+@media (max-width: 768px)
+    body
+        display: block
+        height: auto
+   
+    .preview-component
+        display: block
+        margin: 50px auto
+        width: 450px
+
+    .preview-component-card
+        padding: 50px 80px 50px 80px
+
+    .preview-component-sedans
+        border-radius: 10px 10px 0px 0px
+
+    .preview-component-luxury
+        border-radius: 0px 0px 10px 10px
+
+    footer
+        position: relative
+        bottom: 5px
+    
+
+@media (max-width: 576px)
+
+    .preview-component
+        margin: 25px auto
+        max-width: 320px
+
+    .preview-component-card
+        padding: 50px 50px 50px 50px
+    
+    .preview-component-card-btn
+        margin-top: 40px
+
+@media (max-width: 350px)
+    .preview-component
+        width: auto
